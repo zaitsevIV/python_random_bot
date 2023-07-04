@@ -1,5 +1,5 @@
 # telegram_random_bot
-made by tiwafuj
+This bot based on pyTelegramBotAPI library
 
 ## Description of the program:
 
@@ -13,4 +13,6 @@ roll the dice and print the number
 create a password
 
 ## functional example:
-![image](https://user-images.githubusercontent.com/108236100/196060833-0cd0e480-c474-4a9d-b561-98205abca44c.png)
+![image](https://github.com/zaitsevIV/python_random_bot/blob/main/5f124810-b755-4d87-8f54-9de1d9e1ccbe.png)
+![image](https://github.com/zaitsevIV/python_random_bot/blob/main/2def3039-471a-4a83-a879-ad503732b762.png)
+
