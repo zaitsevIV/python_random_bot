@@ -2,7 +2,7 @@ import functionals
 from data_for_bot import bot_text, bot_functional
 from errors import int_error, random_number_error, random_password_error, static_errors
 import telebot
-import random
+import numpy as np
 from dotenv import load_dotenv
 import os
 
@@ -25,7 +25,7 @@ def get_text_messages(message):
         msg = bot.send_message(message.from_user.id, f'Input your first number ')
         bot.register_next_step_handler(msg, first_random_number)
     elif message.text == '/random_dice_number':
-        number = random.randint(1, 6)
+        number = np.random.randint(1, 6)
         bot.send_photo(message.from_user.id, functionals.dice_photo(number))
     elif message.text == '/random_password':
         msg = bot.send_message(message.from_user.id, f'Input length of password')
@@ -44,7 +44,7 @@ def second_random_number(message, value):
     if int_error(message) is True and random_number_error(value, message) is True:
         bot.send_message(message.from_user.id, f'Number can be in the range(from {value} to {message.text})\n'
                                                f'Your random number: '
-                                               f'{random.randint(int(value), int(message.text))}')
+                                               f'{np.random.randint(int(value), int(message.text))}')
 
 
 def password(message):

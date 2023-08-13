@@ -1,5 +1,5 @@
 import telebot
-import random
+import numpy as np
 from data_for_bot import bot_functional
 from functionals import password_creater
 from dotenv import load_dotenv
@@ -20,7 +20,7 @@ def int_error(value):
 
 def random_number_error(f_value, s_value):
     try:
-        random.randint(int(f_value), int(s_value.text))
+        np.random.randint(int(f_value), int(s_value.text))
     except ValueError:
         return static_errors(s_value)
     else:
