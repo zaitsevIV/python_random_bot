@@ -1,5 +1,5 @@
 # telegram_random_bot @common_random_bot
-This bot based on pyTelegramBotAPI library
+This bot is based on pyTelegramBotAPI library
 
 ## Description of the program:
 
